@@ -54,6 +54,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.7)
+    cowsay (0.3.0)
     crass (1.0.6)
     erubi (1.10.0)
     execjs (2.7.0)
@@ -162,6 +163,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   coffee-rails
+  cowsay
   jbuilder
   jquery-rails
   listen
