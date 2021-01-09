@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: dcarfjsoq606f0
-  username: xxgqabqgfhkiqp
+  database: ruby-getting-started_production
+  username: ruby-getting-started
   password: <%= ENV['RUBY-GETTING-STARTED_DATABASE_PASSWORD'] %>
