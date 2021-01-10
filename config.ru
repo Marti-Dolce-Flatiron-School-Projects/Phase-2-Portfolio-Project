@@ -1,5 +1,5 @@
 # config.ru
 
-require 'controllers/app'
+require './app'
 $stdout.sync = true
 run Sinatra::Application
