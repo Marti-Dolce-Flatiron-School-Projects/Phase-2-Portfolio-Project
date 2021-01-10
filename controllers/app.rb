@@ -2,7 +2,7 @@
 
 require 'sinatra'
 require 'sinatra/activerecord'
-require './environments'
+require_relative '../config/environments'
 
 
 get '/' do
