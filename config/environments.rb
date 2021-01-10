@@ -14,3 +14,4 @@ end
 #    :encoding => 'utf8'
 #  )
 # end
+require 'app'
