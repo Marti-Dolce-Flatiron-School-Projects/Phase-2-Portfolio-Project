@@ -1,4 +1,5 @@
-require './config/environment'
+# config.ru
+
+require './app'
 $stdout.sync = true
-run ApplicationController
-use ListingsController
+run Sinatra::Application
