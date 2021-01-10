@@ -1,8 +1,9 @@
 {
-  "name": "Start on Heroku: Ruby",
-  "description": "A barebones Rails app, which can easily be deployed to Heroku",
-  "image": "heroku/ruby",
-  "repository": "https://github.com/heroku/ruby-getting-started",
-  "keywords": ["ruby", "rails" ],
-  "addons": ["heroku-postgresql"]
+    "name": "Getting Started No Code",
+    "description": "A basic app showing Heroku, and Heroku Connect, supporting a no-local-dev Getting Started tutorial on Dev Center",
+    "logo": "https://raw.githubusercontent.com/heroku/no-local-dev-getting-started/master/connect-logo.png",
+    "website": "https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev",
+    "repository": "https://github.com/heroku/no-local-dev-getting-started",
+    "success_url": "/",
+    "addons": ["heroku-postgresql", "herokuconnect:demo"]
 }

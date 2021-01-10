@@ -1,0 +1,24 @@
+createddate,isdeleted,name,systemmodstamp,email,phone,sfid,id,_hc_lastop,_hc_err,title
+2021-01-10 04:53:44,false,Bob Someone,2021-01-10 04:53:44,bsom@source.com,665-944-4691,0034x000007HeuOAAS,22,,,
+2021-01-10 04:53:44,false,Jane Doe,2021-01-10 04:53:44,jdoe@home.com,464-939-9312,0034x000007HeuNAAS,23,,,
+2021-01-10 04:53:43,false,Nadie Person,2021-01-10 04:53:43,nadp@stores.com,444-654-2399,0034x000007HeuMAAS,21,,,
+2021-01-10 03:59:06,false,Sean Forbes,2021-01-10 03:59:06,sean@edge.com,(512) 757-6000,0034x000007C638AAC,5,SYNCED,,CFO
+2021-01-10 03:59:06,false,Jack Rogers,2021-01-10 03:59:06,jrogers@burlington.com,(336) 222-7000,0034x000007C639AAC,6,SYNCED,,"VP, Facilities"
+2021-01-10 03:59:06,false,Pat Stumuller,2021-01-10 03:59:06,pat@pyramid.net,(014) 427-4427,0034x000007C63AAAS,7,SYNCED,,"SVP, Administration and Finance"
+2021-01-10 03:59:06,false,Andy Young,2021-01-10 03:59:06,a_young@dickenson.com,(785) 241-6200,0034x000007C63BAAS,8,SYNCED,,"SVP, Operations"
+2021-01-10 03:59:06,false,Tim Barr,2021-01-10 03:59:06,barr_tim@grandhotels.com,(312) 596-1000,0034x000007C63CAAS,9,SYNCED,,"SVP, Administration and Finance"
+2021-01-10 03:59:06,false,John Bond,2021-01-10 03:59:06,bond_john@grandhotels.com,(312) 596-1000,0034x000007C63DAAS,10,SYNCED,,"VP, Facilities"
+2021-01-10 03:59:06,false,Stella Pavlova,2021-01-10 03:59:06,spavlova@uog.com,(212) 842-5500,0034x000007C63EAAS,11,SYNCED,,"SVP, Production"
+2021-01-10 03:59:06,false,Lauren Boyle,2021-01-10 03:59:06,lboyle@uog.com,(212) 842-5500,0034x000007C63FAAS,1,SYNCED,,"SVP, Technology"
+2021-01-10 03:59:06,false,Babara Levy,2021-01-10 03:59:06,b.levy@expressl&t.net,(503) 421-7800,0034x000007C63GAAS,13,SYNCED,,"SVP, Operations"
+2021-01-10 03:59:06,false,Josh Davis,2021-01-10 03:59:06,j.davis@expressl&t.net,(503) 421-7800,0034x000007C63HAAS,14,SYNCED,,"Director, Warehouse Mgmt"
+2021-01-10 03:59:06,false,Jane Grey,2021-01-10 03:59:06,jane_gray@uoa.edu,(520) 773-9050,0034x000007C63IAAS,15,SYNCED,,Dean of Administration
+2021-01-10 03:59:06,false,Arthur Song,2021-01-10 03:59:06,asong@uog.com,(212) 842-5500,0034x000007C63JAAS,16,SYNCED,,CEO
+2021-01-10 03:59:06,false,Ashley James,2021-01-10 03:59:06,ajames@uog.com,+44 191 4956203,0034x000007C63KAAS,17,SYNCED,,"VP, Finance"
+2021-01-10 03:59:06,false,Tom Ripley,2021-01-10 03:59:06,tripley@uog.com,(650) 450-8810,0034x000007C63LAAS,18,SYNCED,,Regional General Manager
+2021-01-10 03:59:06,false,Liz D'Cruz,2021-01-10 03:59:06,ldcruz@uog.com,(650) 450-8810,0034x000007C63MAAS,19,SYNCED,,"VP, Production"
+2021-01-10 03:59:06,false,Edna Frank,2021-01-10 03:59:06,efrank@genepoint.com,(650) 867-3450,0034x000007C63NAAS,20,SYNCED,,"VP, Technology"
+2021-01-10 03:59:06,false,Siddartha Nedaerk,2021-01-10 03:59:06,,,0034x000007C63PAAS,2,,,
+2021-01-10 03:59:06,false,Avi Green,2021-01-10 03:59:06,agreen@uog.com,(212) 842-5500,0034x000007C63OAAS,3,SYNCED,,CFO
+2021-01-10 03:59:06,false,Jake Llorrac,2021-01-10 03:59:06,,,0034x000007C63QAAS,12,,,
+2021-01-10 03:59:06,false,Rose Gonzalez,2021-01-10 03:59:06,rose@edge.com,(512) 757-6000,0034x000007C637AAC,4,SYNCED,,"SVP, Procurement"
