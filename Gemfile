@@ -6,7 +6,6 @@ gem "activerecord"
 gem "sinatra-activerecord"
 
 gem 'pg'
-gem 'require_all'
 
 # a little console
 gem "tux"
