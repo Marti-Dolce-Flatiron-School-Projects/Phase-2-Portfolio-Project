@@ -9,3 +9,6 @@ get '/' do
   erb :start
 end
 
+get '/authentication' do
+  erb :index
+end
