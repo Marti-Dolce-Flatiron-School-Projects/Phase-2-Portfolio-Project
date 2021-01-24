@@ -1,0 +1,42 @@
+<h1>Articles</h1>
+
+<section id="page">
+  <table class="table-striped">
+    <thead>
+    <tr>
+      <th>Article Title</th>
+      <th>Article Content</th>
+      <th>Created</th>
+      <th>Edit</th>
+      <th>Delete</th>
+
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @article.each do |a| %>
+    <tr>
+      <td><%= a.title %></td>
+      <td><%= a.content %></td>
+      <td><%= a.created_at.to_s %></td>
+      <td><a href='/articles/<%= a.id %>/edit'>Edit</a></td>
+      <td> <a href="<%= @delete %>/articles/<%= a.id %> ">Delete</a></td>
+    </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <br/>
+  <nav>
+    <ol>
+      <li><a href="/articles">Articles Home</a></li>
+      <li><a href="/articles/new">New</a></li>
+
+    </ol>
+  </nav>
+</section>
+
+
+
+  <input type="submit" />
+</form>

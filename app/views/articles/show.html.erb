@@ -1,0 +1,43 @@
+<h1>Show Articles</h1>
+
+
+<section id="page">
+  <table class="table-striped">
+    <thead>
+    <tr>
+      <th>Article ID</th>
+      <th>Article Title</th>
+      <th>Article Content</th>
+      <th>Created</th>
+      <th>Updated</th>
+      <th></th>
+
+    </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td><a href='/articles/<%= @article.id %>/edit'><%= @article.id %></a></td>
+        <td><%= @article.title %></td>
+        <td><%= @article.content %></td>
+        <td><%= @article.created_at.to_s %></td>
+        <td><%= @article.updated_at.to_s %></td>
+        <td>  <form method="post" action="/articles/<%= @article.id %>">
+          <input type="hidden" name="_method" value="delete" />
+          <input type="submit" value="Delete" class="button" />
+        </form></td>
+      </tr>
+
+    </tbody>
+  </table>
+  <nav>
+    <ol>
+      <li><a href="/articles">Roles Home</a></li>
+      <li><a href="/roles/show">View</a></li>
+      <li><a href="/roles/new">New</a></li>
+
+    </ol>
+  </nav>
+
+</section>

@@ -1,11 +1,26 @@
-source 'https://rubygems.org'
-ruby "2.7.2"
+source 'http://rubygems.org'
 
-gem "sinatra" 
-gem "activerecord" 
-gem "sinatra-activerecord"
+# ruby '2.6.1'
+gem 'activerecord', '~> 5.2.3', :require => 'active_record'
+gem 'after_commit_everywhere'
+gem 'bcrypt', '~> 3.1.1'
+gem 'json'
+gem 'mysql2'
+gem 'pry'
+gem 'rake'
+gem 'rack'
+gem 'require_all'
+gem 'shotgun'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 
-gem 'pg'
+gem 'sqlite3'
+gem 'thin'
+gem 'tux'
+gem 'yaml'
 
-# a little console
-gem "tux"
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
+  gem 'rack-test'
+  gem 'rspec'
+end
