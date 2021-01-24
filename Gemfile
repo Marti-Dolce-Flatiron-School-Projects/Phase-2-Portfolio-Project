@@ -15,7 +15,7 @@ gem 'require_all'
 gem 'shotgun'
 gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 
-gem 'thin'
+
 gem 'tux'
 gem 'yaml'
 
