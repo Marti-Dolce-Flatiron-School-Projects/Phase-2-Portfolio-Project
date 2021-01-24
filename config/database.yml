@@ -17,6 +17,7 @@ test:
 
 production:
   <<: *default
+  database: postgresql-silhouetted-73106
 
 
 
