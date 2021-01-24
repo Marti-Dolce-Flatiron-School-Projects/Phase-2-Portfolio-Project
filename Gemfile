@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-# ruby '2.6.1'
+ruby '2.6.6'
 gem 'activerecord', '~> 5.2.3', :require => 'active_record'
 gem 'after_commit_everywhere'
 gem 'bcrypt', '~> 3.1.1'
