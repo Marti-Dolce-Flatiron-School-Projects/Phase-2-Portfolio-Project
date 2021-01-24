@@ -1,5 +1,5 @@
 # config.ru
-#
+# Removed Heroku Plugin
 require './config/environment'
 
 begin
