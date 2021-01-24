@@ -1,2 +1,1 @@
-web: ruby app.rb
-console: tux
+web: bundle exec puma -C config/puma.rb

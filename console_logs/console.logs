@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+	2: from /Users/mj163/.rvm/gems/ruby-2.6.1/bin/rackup:23:in `<main>'
+	1: from /Users/mj163/.rvm/rubies/ruby-2.6.1/lib/ruby/site_ruby/2.6.0/rubygems.rb:303:in `activate_bin_path'
+/Users/mj163/.rvm/rubies/ruby-2.6.1/lib/ruby/site_ruby/2.6.0/rubygems.rb:284:in `find_spec_for_exe': can't find gem rack (>= 0.a) with executable rackup (Gem::GemNotFoundException)
