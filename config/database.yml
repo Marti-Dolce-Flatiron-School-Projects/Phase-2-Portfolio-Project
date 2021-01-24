@@ -17,11 +17,8 @@ test:
 
 production:
   <<: *default
-  host: ec2-54-156-73-147.compute-1.amazonaws.com
-  database: d506f33f960bp1
-  username: smnxbqpapencjy
-  port: 5432
-  password: 69fce482020bf4f57ed98a343986a1b6c2d7b695f83113b268ecdb0907700eba
+  database: listings
+
 
 ## mysql.database.yml
 #
