@@ -10,6 +10,11 @@ begin
   run ApplicationController
   use RoleController
   use ArticleController
+  use AgentsController
+  use CompaniesController
+  use ListingsController
+  use SignupsController
+  use LoginsController
 rescue ActiveRecord::PendingMigrationError => e
   warn e
   exit 1
