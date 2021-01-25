@@ -6,6 +6,7 @@
       <th>ID. </th>
       <th>Role Name</th>
       <th>Created At</th>
+      <th>Updated At</th>
       <th>Edit</th>
       <th>Delete</th>
     </tr>
@@ -17,6 +18,7 @@
         <td><%= role.id.to_s %></td>
         <td><%= role.role_name %></td>
         <td><%= role.created_at.to_s %></td>
+        <td><%= role.updated_at.to_s %></td>
         <td><a href='/roles/<%= role.id%>/edit'>Edit</a></td>
         <td> <a href="<%= @delete %>/roles/<%= role.id %> ">Delete</a></td>
       </tr>
