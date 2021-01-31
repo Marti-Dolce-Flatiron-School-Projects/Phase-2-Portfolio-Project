@@ -4,9 +4,9 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 
-#development:
-#  <<: *default
-#  database: listings_development
+development:
+  <<: *default
+  database: listings_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -33,13 +33,13 @@ production:
 ## And be sure to use new-style password hashing:
 ##   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
-development:
-  adapter: mysql2
-  encoding: utf8
-  database: listings_development
-  pool: 3
-  username: root
-  password: palo5non!
+#development:
+#  adapter: mysql2
+#  encoding: utf8
+#  database: listings_development
+#  pool: 3
+#  username: root
+#  password: palo5non!
 #
 #
 ## Warning: The database defined as "test" will be erased and
