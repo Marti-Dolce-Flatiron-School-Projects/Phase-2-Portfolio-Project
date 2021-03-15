@@ -1,1 +1,18 @@
-<h1>Insert the form to edit an instance of your model here.</h1>
+<h1>Edit Listing</h1>
+<section id="page">
+  <form class="form" action="/listings/<%= @listing.id %>" method="post">
+    <input type="hidden" name="_method" value="patch">
+    <label for="listing_name" class="label-name">listing Name</label>
+    <input type="text" id="listing_name" name="listing[listing_name]" value="<%= @listing.listing_name %>" />
+
+    <input type="submit" value="Update listing" class="button" />
+  </form>
+
+  <nav>
+    <ol>
+      <li><a href="/listings/new">listings Home</a></li>
+      <li><a href="/listings/new">New</a></li>
+
+    </ol>
+  </nav>
+</section>
