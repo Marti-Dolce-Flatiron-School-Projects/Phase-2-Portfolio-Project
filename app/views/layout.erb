@@ -7,12 +7,14 @@
 <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
-<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+
   <title>Listing Manager</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
   <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,35 +24,61 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body style="height:1000px;">
+<body>
 <div class="container">
-  <!-- Navigation -->
-  <header>
-    <h4 class="logo">The R. Dolce Group</h4>
-
-    <nav>
-      <ul>
-        <li><a href="/">HOME</a></li>
-        <li><a href="/logins">LOGIN</a></li>
-        <li><a href="/listings">LISTINGS</a></li>
+<!-- Navigation -->
+<header>
+  <h4 class="logo">The R. Dolce Group</h4>
+  <nav>
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <%# if signed_in? %>
+<!--        <li><a href="/users/<%#= current_user.id %>">VIEW PROFILE</a></li>-->
+<!--        <li><a href="/listings/new">NEW LISTINGS</a></li>-->
+<!--        <li><a href="/listings">MY LISTINGS</a></li>-->
+<!--        <li><a href="/signout">[ LOGOUT ]</a></li>-->
+      <%# else %>
+        <li><a href="/listings/view-listings">LISTINGS</a></li>
         <li><a href="/agents">AGENTS</a></li>
-        <li><a href="/companies">COMPANIES</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <h2 class="hero_header">&nbsp;</h2>
-  </section>
-  <section style="padding: 45px 55px;">
-    <br> <br>
-  <!-- Start Dynamic content -->
+        <li><a href="/signup">SIGNUP</a></li>
+        <li><a href="/signin">LOGIN</a></li>
+      <%# end %>
+    </ul>
+  </nav>
+</header>
+<!-- END Navigation -->
+<!-- Hero Section -->
+<section class="hero" id="hero"></section>
+<!-- END Hero Section -->
+<!-- Begin authentication check -->
+  <div style="height: 30px;background-color: #d85751; color: #ffffff; padding: 10px 5px 5px 5px;">
+    <div style="float: left;">PLEASE NOTE: This is a development site, not all features may work as expected.</div>
+    <div style="float: right;margin-top: -15px;padding-right: 45px;">
+      <%# if signed_in? %>
+        <h3>Welcome back, <%#= current_user.fname %>!</h3>
 
-    <%= yield %>
-  <!-- End Dynamic content -->
-    <br> <br>
-  </section>
+      <%# else %>
+        <div style="float: right;margin-top:-10px;">
+          <a class="nav-link" href="/signup"><input type="submit" value="signup" class="button"></a></div>
 
+      <%# end %>
+    </div>
+
+
+
+
+  </div>
+<!-- END Begin authentication check -->
+
+<!-- Start Dynamic content -->
+  <section style="background-color: #f7fafa; padding:15px;">
+<%= yield %>
+  </section>
+<!-- End Dynamic content -->
+
+
+<!-- Begin Page Footer -->
+<section id="page-footer">
   <section class="banner">
     <h2 class="parallax">345 Carl Street Apt 12, Carrol Rd. Fort Myers, FL 33913</h2>
     <p class="parallax_description">Phone:: +1 239 555 1234 | Email: marti@rdolcegroup.com</p>
@@ -58,11 +86,14 @@
   <section class="footer_banner" id="contact">
     <h2 class="hidden">Footer Banner Section </h2>
     <p class="hero_header">REGISTER YOUR PROPERTIES TODAY!</p>
-    <div class="button"><a href="/signups">subscribe</a></div>
+    <div class="button"><a href="/signup">subscribe</a></div>
   </section>
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2021- <strong>ERG, All Rights Reserved. marti@rdolcegroup.com | +1 239 555 1234</strong>
   </div>
+</section>
 </div>
+<!-- END Page Footer -->
 </body>
 </html>
+

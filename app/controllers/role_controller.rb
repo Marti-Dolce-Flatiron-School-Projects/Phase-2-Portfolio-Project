@@ -2,8 +2,7 @@
 
 # Roles
 class RoleController < ApplicationController
-
-  get "/roles" do
+  get '/roles' do
     @role = Role.all
     erb :"/roles/index.html"
   end

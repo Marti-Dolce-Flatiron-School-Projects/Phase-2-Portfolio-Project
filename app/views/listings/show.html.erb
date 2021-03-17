@@ -1,1 +1,45 @@
-<h1>This is the show page for an individual instance of your model.</h1>
+<h1>Listing Changes?</h1>
+
+
+<section id="page">
+  <table class="table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Listing Name</th>
+      <th>Created</th>
+      <th>Updated</th>
+      <th></th>
+      <th></th>
+
+    </tr>
+    </thead>
+
+    <tbody>
+
+    <tr>
+      <td><a href='/listings/<%= @listing.id %>/edit'><%= @listing.id %></a></td>
+      <td><%= @listing.hoa %></td>
+      <td><%= @listing.created_at.to_s %></td>
+      <td><%= @listing.updated_at.to_s %></td>
+      <td><form method="get" action="/listings">
+        <input type="submit" value="Continue" class="button" />
+      </form></td>
+      <td>  <form method="post" action="/listings/<%= @listing.id %>">
+        <input type="hidden" name="_method" value="delete" />
+        <input type="submit" value="Delete" class="button" />
+      </form></td>
+
+    </tr>
+
+    </tbody>
+  </table>
+  <nav>
+    <ol>
+      <li><a href="/listings">Listings Home</a></li>
+      <li><a href="/listings/new">New</a></li>
+
+    </ol>
+  </nav>
+
+</section>

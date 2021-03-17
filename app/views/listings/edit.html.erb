@@ -1,1 +1,56 @@
-<h1>Insert the form to edit an instance of your model here.</h1>
+<h1> Edit Your Listing</h1>
+<h1>You: <%#= current_user.fname %></h1>
+<h3>Email: <%#= current_user.email %></h3>
+
+<h2>Selected Listing: <%= @listing.address%> .: Listing ID # <%= @listing.id %></h2>
+
+<h2>Details:</h2>
+
+<form class="form" action="/listings/<%= @listing.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <table width="100%" border="1" cellspacing="1" cellpadding="1">
+    <tbody>
+    <tr>
+      <th colspan="2" scope="col">Listing Name: <input name="name" type="text" value="<%= @listing.address%>" style="width:400px;" ></th>
+    </tr>
+    <tr>
+      <th colspan="2" scope="col">Asking Price: <input type="text" name="asking_price" value="<%= @listing.asking_price %>"></th>
+    </tr>
+    <tr>
+      <td><label for="tag_name" class="label-name">HOA</label></td>
+      <td> <label for="bedrooms" class="label-name">Bedrooms</label></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="name" value="<%= @listing.hoa %>"></td>
+      <td><input type="text" name="bedrooms" value="<%= @listing.bedrooms %>"></td>
+    </tr>
+    <tr>
+      <td><label for="status" class="label-name">*Dropdown Listing Status</label></td>
+      <td><label for="bathrooms" class="label-name">Bathrooms</label></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="status" value="<%= @listing.status %>"></td>
+      <td><input type="text" name="bathrooms" value="<%= @listing.bathrooms %>"></td>
+    </tr>
+    <tr>
+      <td>  <label for="first_listed" class="label-name">*Date First Time listed</label></td>
+      <td><label for="sqft" class="label-name">SQFT</label></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="first_listed" value="<%= @listing.first_listed %>"></td>
+      <td><input type="text" name="sqft" value="<%= @listing.sqft %>"></td>
+    </tr>
+
+      <td colspan="2">Summary</td>
+    </tr>
+    <tr>
+      <td colspan="2"><textarea name="summary" value="" style="width: 525px"><%= @listing.summary.to_s %></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2">Add Photos?</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <input type="submit" value="update" class="button" />
+</form>
