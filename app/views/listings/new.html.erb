@@ -1,1 +1,52 @@
-<h1>Insert the form to create a new instance of your model.</h1>
+<h1> Add New Listing</h1>
+<h1>You: <%= current_user.fname %></h1>
+<h3>Email: <%= current_user.email %></h3>
+
+
+<form class="form" action="/listings/" method="post">
+  <table width="100%" border="1" cellspacing="1" cellpadding="1">
+    <tbody>
+    <tr>
+      <th colspan="2" scope="col">listing.address: <input name="name" type="text" value="name" style="width:400px;" ></th>
+    </tr>
+    <tr>
+      <th colspan="2" scope="col">Asking Price: <input type="text" name="asking_price" value="$16,000,000.00"></th>
+    </tr>
+    <tr>
+      <td><label for="tag_name" class="label-name">Tag Name</label></td>
+      <td> <label for="bedrooms" class="label-name">Bedrooms</label></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="name" value="tag_name"></td>
+      <td><input type="text" name="bedrooms" value="bedrooms"></td>
+    </tr>
+    <tr>
+      <td><label for="status" class="label-name">*Dropdown Listing Status</label></td>
+      <td><label for="bathrooms" class="label-name">Bathrooms</label></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="status" value="status"></td>
+      <td><input type="text" name="bathrooms" value="bathrooms"></td>
+    </tr>
+    <tr>
+      <td>  <label for="first_listed" class="label-name">*Date First Time listed</label></td>
+      <td><label for="sqft" class="label-name">SQFT</label></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="first_listed" value="2018-11-04"></td>
+      <td><input type="text" name="sqft" value="sqft"></td>
+    </tr>
+
+    <td colspan="2">Summary</td>
+    </tr>
+    <tr>
+      <td colspan="2"><textarea name="summary" value="summary" style="width: 525px">Listing Summary</textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2">Add Photos?</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <input type="submit" value="update" class="button" />
+</form>

@@ -19,7 +19,7 @@
 
     <tr>
       <td><a href='/listings/<%= @listing.id %>/edit'><%= @listing.id %></a></td>
-      <td><%= @listing.hoa %></td>
+      <td><%= @listing.address %></td>
       <td><%= @listing.created_at.to_s %></td>
       <td><%= @listing.updated_at.to_s %></td>
       <td><form method="get" action="/listings">
